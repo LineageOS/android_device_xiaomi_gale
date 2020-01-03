@@ -169,6 +169,9 @@ PRODUCT_COPY_FILES += \
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.xiaomi-multihal \
