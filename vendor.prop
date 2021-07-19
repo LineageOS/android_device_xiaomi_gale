@@ -167,6 +167,9 @@ ro.vendor.mtk_data_config=1
 ro.hardware.wechat=beanpod
 ro.hardware.kmsetkey=beanpod
 
+# LMK
+ro.lmk.filecache_min_kb=153600
+
 # Media
 debug.stagefright.c2inputsurface=-1
 media.c2.dmabuf.padding=3072
