@@ -368,4 +368,6 @@
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
     <string name="config_mainBuiltInDisplayCutout" translatable="false">M 0,0 H -40 V 68 H 40 V 0 H 0 Z</string>
+    <!-- Controls whether the display spaces should be allowed to rotate to 180 degrees. -->
+    <bool name="config_allowAllRotations">true</bool>
 </resources>
