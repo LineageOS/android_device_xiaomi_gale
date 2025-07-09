@@ -168,6 +168,9 @@ PRODUCT_PACKAGES += \
     init.zram.rc \
     ueventd.mt6768.rc
 
+PRODUCT_COPY_FILES += \
+    hardware/google/pixel/mm/fstab.zram.40p:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.zram
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.hardware_keystore.km41.xml
