@@ -242,6 +242,9 @@ PRODUCT_PACKAGES += \
     SystemUIOverlayGale \
     Launcher3DeviceOverlay
 
+DEVICE_PACKAGE_OVERLAYS += \
+    $(DEVICE_PATH)/overlay-lineage
+
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Partitions
