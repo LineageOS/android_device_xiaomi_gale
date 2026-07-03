@@ -144,6 +144,9 @@ drm.service.enabled=true
 ro.vendor.mtk_widevine_drm_l1_support=1
 ro.netflix.bsp_rev=MTK6768-19055-1
 
+# FRP
+ro.frp.pst=/dev/block/by-name/frp
+
 # GPS
 ro.vendor.gps.chrdev=gps_drv_stp
 ro.vendor.mtk_agps_app=1
