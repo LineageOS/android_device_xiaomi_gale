@@ -30,6 +30,8 @@ def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
     return f'{lib}_{partition}' if partition == 'vendor' else None
 
 blob_fixups: blob_fixups_user_type = {
+    ('vendor/lib64/libaalservice.so', 'vendor/lib64/libcam.utils.sensorprovider.so'): blob_fixup()
+        .replace_needed('android.hardware.sensors-V2-ndk.so', 'android.hardware.sensors-V3-ndk.so'),
     'vendor/bin/hw/android.hardware.audio.service-aidl.mediatek': blob_fixup()
         .replace_needed('android.media.audio.common.types-V5-ndk.so', 'android.media.audio.common.types-V3-ndk.so')
         .replace_needed('libaudio_aidl_conversion_common_ndk.so', 'libaudio_aidl_conversion_common_ndk_prebuilt.so'),
@@ -51,8 +53,6 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.hardware.graphics.common-V5-ndk.so', 'android.hardware.graphics.common-V7-ndk.so'),
     'vendor/lib64/libmtkcam_hal_aidl_common.so': blob_fixup()
         .replace_needed('android.hardware.camera.common-V2-ndk.so', 'android.hardware.camera.common-V1-ndk.so'),
-    'vendor/lib64/libcam.utils.sensorprovider.so': blob_fixup()
-        .replace_needed('android.hardware.sensors-V2-ndk.so', 'android.hardware.sensors-V3-ndk.so'),
     (
         'vendor/lib64/libcodec2_mtk_vdec.so',
         'vendor/lib64/libcodec2_mtk_venc.so'
