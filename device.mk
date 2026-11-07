@@ -42,6 +42,11 @@ PRODUCT_PACKAGES += \
     android.hardware.boot-service.mediatek \
     android.hardware.boot-service.mediatek_recovery
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health-service.mediatek \
+    android.hardware.health-service.mediatek-recovery
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
