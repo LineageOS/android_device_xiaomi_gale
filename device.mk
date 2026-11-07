@@ -46,6 +46,18 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.health-service.mediatek \
     android.hardware.health-service.mediatek-recovery
+# Init
+PRODUCT_PACKAGES += \
+    fstab.mt6768 \
+    fstab.mt6768.vendor_ramdisk \
+    init.connectivity.rc \
+    init.recovery.mt6768.rc \
+    init.mt6768.rc \
+    init.mtkgki.rc \
+    init.modem.rc \
+    init.project.rc \
+    init.sensor_1_0.rc \
+    ueventd.mt6768.rc
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
