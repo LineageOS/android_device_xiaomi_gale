@@ -37,6 +37,11 @@ PRODUCT_PACKAGES += \
     update_engine_sideload \
     update_verifier
 
+# Bootcontrol
+PRODUCT_PACKAGES += \
+    android.hardware.boot-service.mediatek \
+    android.hardware.boot-service.mediatek_recovery
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
