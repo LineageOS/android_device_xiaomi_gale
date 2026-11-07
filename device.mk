@@ -56,7 +56,9 @@ PRODUCT_SHIPPING_API_LEVEL := 33
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(DEVICE_PATH)
+    $(DEVICE_PATH) \
+    hardware/xiaomi \
+    hardware/mediatek
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/gale/gale-vendor.mk)
