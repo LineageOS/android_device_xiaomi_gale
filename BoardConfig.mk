@@ -35,6 +35,9 @@ TARGET_CPU_VARIANT := cortex-a76
 TARGET_BOOTLOADER_BOARD_NAME := gale
 TARGET_NO_BOOTLOADER := true
 
+# Display
+TARGET_SCREEN_DENSITY := 320
+
 # Partitions
 -include vendor/lineage/config/BoardConfigReservedSize.mk
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
