@@ -201,7 +201,7 @@ vendor/firmware/soc1_0_ram_bt_1a_1_hdr.bin
 # Camera
 vendor/bin/hw/camerahalserver
 vendor/etc/init/camerahalserver.rc
-vendor/bin/lib3a.ccu.dm                                 
+vendor/bin/lib3a.ccu.dm
 vendor/bin/lib3a.ccu.pm
 vendor/firmware/lib3a.ccu
 vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so
@@ -630,11 +630,11 @@ vendor/odm/etc/camera/camerabooster.json:vendor/etc/camera/camerabooster.json
 
 
 # Display
-vendor/bin/hw/vendor.mediatek.hardware.mmlpq@V1-service 
-vendor/bin/hw/vendor.mediatek.hardware.pq_aidl-service 
+vendor/bin/hw/vendor.mediatek.hardware.mmlpq@V1-service
+vendor/bin/hw/vendor.mediatek.hardware.pq_aidl-service
 vendor/bin/hw/android.hardware.graphics.composer@3.3-service
 vendor/bin/hw/android.hardware.graphics.allocator-V2-service-mediatek
-vendor/lib64/hw/mapper.mediatek.so 
+vendor/lib64/hw/mapper.mediatek.so
 vendor/bin/hw/vendor.mediatek.hardware.gpuserv-service
 vendor/etc/gralloc/cam.xml
 vendor/etc/gralloc/dpu.xml
@@ -642,7 +642,7 @@ vendor/etc/gralloc/dpu_aeu.xml
 vendor/etc/gralloc/gpu.xml
 vendor/etc/gralloc/vpu.xml
 vendor/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc
-vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc 
+vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc
 vendor/etc/init/android.hardware.graphics.composer@3.3-service.rc
 vendor/etc/init/arm.mali.platform-mediatek.rc
 vendor/etc/init/gpuserv-default.rc
@@ -654,17 +654,17 @@ vendor/etc/pq_flag.xml
 vendor/etc/cust_color.xml
 vendor/etc/mali_platform.config
 vendor/lib64/egl/libGLES_mali.so
-vendor/lib64/egl/libGLES_meow.so 
+vendor/lib64/egl/libGLES_meow.so
 vendor/lib64/egl/libMEOW_data.so
 vendor/lib64/egl/libMEOW_gift.so
-vendor/lib64/egl/libMEOW_qt.so 
-vendor/lib64/egl/libMEOW_trace.so 
+vendor/lib64/egl/libMEOW_qt.so
+vendor/lib64/egl/libMEOW_trace.so
 vendor/lib64/hw/hwcomposer.mt6768.so
 vendor/lib64/hw/vendor.mediatek.hardware.pq_aidl-impl.so
 vendor/lib64/hw/android.hardware.graphics.allocator-V2-mediatek.so
 vendor/lib64/hw/vulkan.mali.so
-vendor/lib64/arm.graphics-V5-ndk.so 
-vendor/lib64/arm.mali.platform-V2-ndk.so 
+vendor/lib64/arm.graphics-V5-ndk.so
+vendor/lib64/arm.mali.platform-V2-ndk.so
 vendor/lib64/libDefaultFpsActor.so
 vendor/lib64/libFrameRecord.so
 vendor/lib64/libNoFpsActor.so
@@ -673,7 +673,7 @@ vendor/lib64/libarm_gralloc_properties_sysprop.so
 vendor/lib64/libarm_mali_config_sysprops.so
 vendor/lib64/libion_mtk.so
 vendor/lib64/libion_ulit.so
-vendor/lib64/libpixelflinger.so 
+vendor/lib64/libpixelflinger.so
 vendor/lib64/libpqframework.so
 vendor/lib64/libpqhdrmetaparser.so
 vendor/lib64/libpqsharememory.so
@@ -684,29 +684,29 @@ vendor/lib64/libcomposer_ext.so
 vendor/lib64/libged.so
 vendor/lib64/libgpu_aux.so
 vendor/lib64/libgpud.so
-vendor/lib64/libgralloc_extra.so 
+vendor/lib64/libgralloc_extra.so
 vendor/lib64/libgralloc_metadata.so
 vendor/lib64/libgralloctypes_mtk.so
-vendor/lib64/libladder.so 
+vendor/lib64/libladder.so
 vendor/lib64/libappgamepq.so
 vendor/lib64/libmtkgpuserv.so
-vendor/lib64/libsilkybrightnesscore.so 
+vendor/lib64/libsilkybrightnesscore.so
 vendor/lib64/libOpenCL.so
 vendor/lib64/libasn1c_core.so
 vendor/lib64/libasn1c_mapi.so
 vendor/lib64/libasn1c_mdmi.so
 vendor/lib64/libminiui.so
-vendor/lib64/libpq_cust_base.so 
-vendor/lib64/mt6768/libmml.so;SYMLINK=vendor/lib64/libmml.so 
+vendor/lib64/libpq_cust_base.so
+vendor/lib64/mt6768/libmml.so;SYMLINK=vendor/lib64/libmml.so
 vendor/lib64/mt6768/libmmlpqImpl.so;SYMLINK=vendor/lib64/libmmlpqImpl.so
-vendor/lib64/mt6768/libpq_sec.so;SYMLINK=vendor/lib64/libpq_sec.so 
-vendor/lib64/mt6768/libpqparamparser.so;SYMLINK=vendor/lib64/libpqparamparser.so 
-vendor/lib64/mt6768/libdpframework.so;SYMLINK=vendor/lib64/libdpframework.so 
-vendor/lib64/vendor.mediatek.hardware.mmlpq-V3-ndk.so 
-vendor/lib64/vendor.mediatek.hardware.pq_aidl-V2-ndk.so 
-vendor/lib64/vendor.mediatek.hardware.pq_aidl-V4-ndk.so 
-vendor/lib64/vendor.mediatek.hardware.pq_aidl-V7-ndk.so 
-vendor/lib64/vendor.mediatek.hardware.composer_ext-V1-ndk.so 
+vendor/lib64/mt6768/libpq_sec.so;SYMLINK=vendor/lib64/libpq_sec.so
+vendor/lib64/mt6768/libpqparamparser.so;SYMLINK=vendor/lib64/libpqparamparser.so
+vendor/lib64/mt6768/libdpframework.so;SYMLINK=vendor/lib64/libdpframework.so
+vendor/lib64/vendor.mediatek.hardware.mmlpq-V3-ndk.so
+vendor/lib64/vendor.mediatek.hardware.pq_aidl-V2-ndk.so
+vendor/lib64/vendor.mediatek.hardware.pq_aidl-V4-ndk.so
+vendor/lib64/vendor.mediatek.hardware.pq_aidl-V7-ndk.so
+vendor/lib64/vendor.mediatek.hardware.composer_ext-V1-ndk.so
 vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
 
 # Display (configs)
@@ -719,7 +719,7 @@ vendor/etc/dsi_panel_c3uv_46_0f_0c_vdo_mi.xml
 vendor/firmware/novatek_ts_hdl_mp.bin
 vendor/firmware/novatek_ts_hdl_fw.bin
 vendor/firmware/focaltech_ts_fw_boe.bin
-vendor/firmware/chipone_firmware.bin 
+vendor/firmware/chipone_firmware.bin
 vendor/firmware/gt1151_default_firmware2.img
 vendor/firmware/omnivision_hdl_firmware.img
 vendor/firmware/ovt_tcm_cap_limits.csv
@@ -734,8 +734,12 @@ vendor/lib64/liboemcrypto.so
 
 # Fuelgauge
 vendor/bin/fuelgauged_nvram
+vendor/etc/init/fuelgauged_init.rc
 vendor/etc/init/fuelgauged_nvram_init.rc
 vendor/lib64/libfgauge_gm30.so
+
+# Fuelgauge - From lamu_g VVTA35.51-137 7eabca release-keys
+vendor/bin/fuelgauged|862119a2c11b364ed31f4e94818378e6753553de
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper-service.beanpod
