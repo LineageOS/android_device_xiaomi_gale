@@ -732,6 +732,11 @@ vendor/lib64/mediadrm/libdrmclearkeyplugin.so
 vendor/lib64/mediadrm/libmockdrmcryptoplugin.so
 vendor/lib64/liboemcrypto.so
 
+# Fuelgauge
+vendor/bin/fuelgauged_nvram
+vendor/etc/init/fuelgauged_nvram_init.rc
+vendor/lib64/libfgauge_gm30.so
+
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper-service.beanpod
 vendor/etc/init/android.hardware.gatekeeper-service.beanpod.rc
