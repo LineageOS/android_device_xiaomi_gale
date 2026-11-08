@@ -1,5 +1,11 @@
 # All blobs from vnd_gale-user 15 AP3A.240905.015.A2 OS2.0.209.0.VGPMIXM release-keys, unless pinned
 
+# AAL
+vendor/lib64/libaalservice.so
+vendor/lib64/libaal_cust.so
+vendor/lib64/libaal_key.so
+vendor/lib64/libaal_sec.so
+
 # Audio
 system/lib64/av-audio-types-aidl-V1-ndk.so
 system_ext/bin/hw/android.hardware.audio.parameter_parser.service
