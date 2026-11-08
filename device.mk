@@ -174,7 +174,8 @@ $(call inherit-product, hardware/mediatek/overlay/mssi.mk)
 
 PRODUCT_PACKAGES += \
     FrameworkOverlayGale \
-    SettingsOverlayGale
+    SettingsOverlayGale \
+    SystemUIOverlayGale
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
