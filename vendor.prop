@@ -221,6 +221,11 @@ ro.surface_flinger.primary_display_orientation=ORIENTATION_0
 ro.surface_flinger.supports_background_blur=0
 vendor.sf.hwc_repaint_fmt=3
 
+# TEE
+ro.vendor.mtk_microtrust_tee_support=1
+ro.vendor.mtk_tee_gp_support=1
+ro.vendor.mtk_svp_on_mtee_support=1
+
 # USB
 vendor.usb.vid=0x0E8D
 vendor.usb.controller=musb-hdrc
