@@ -165,6 +165,7 @@ PRODUCT_PACKAGES += \
     init.modem.rc \
     init.project.rc \
     init.sensor_1_0.rc \
+    init.zram.rc \
     ueventd.mt6768.rc
 
 # Keymaster
@@ -195,6 +196,20 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6768
+
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service.pixel-libperfmgr \
+    vendor.mediatek.hardware.mtkpower@1.2-service.stub
+
+PRODUCT_PACKAGES += \
+    init.mt6768.power.rc
+
+PRODUCT_PACKAGES += \
+    libmtkperf_client_vendor
+
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
@@ -233,7 +248,11 @@ PRODUCT_SHIPPING_API_LEVEL := 33
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
     hardware/xiaomi \
-    hardware/mediatek
+    hardware/mediatek/libmtkperf_client \
+    hardware/mediatek \
+    hardware/google/pixel/pixelstats \
+    hardware/google/pixel/power-libperfmgr \
+    hardware/google/interfaces
 
 # Thermal
 PRODUCT_PACKAGES += \

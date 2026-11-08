@@ -18,6 +18,20 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.mt6768.power.rc",
+    src: "init.mt6768.power.rc",
+    relative_install_path: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.mt6768.thermal.rc",
+    src: "init.mt6768.thermal.rc",
+    relative_install_path: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.recovery.mt6768.rc",
     src: "init.recovery.mt6768.rc",
     relative_install_path: "init",
