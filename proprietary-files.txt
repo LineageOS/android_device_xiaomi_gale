@@ -184,6 +184,8 @@ vendor/etc/audio_param/VoWMicSetting_AudioParam.xml
 vendor/etc/audio_param/VoWMicSetting_ParamUnitDesc.xml
 vendor/etc/audio_param/VoWVoiceCommand_AudioParam.xml
 vendor/etc/audio_param/VoWVoiceCommand_ParamUnitDesc.xml
+vendor/etc/smartpa_param/AW_DSP.bin
+vendor/etc/smartpa_param/AW_SINWAVE_DSP.bin
 
 # Bluetooth
 vendor/etc/init/init.bt_drv.rc
