@@ -736,3 +736,10 @@ vendor/lib64/liboemcrypto.so
 vendor/bin/hw/android.hardware.gatekeeper-service.beanpod
 vendor/etc/init/android.hardware.gatekeeper-service.beanpod.rc
 vendor/etc/vintf/manifest/android.hardware.gatekeeper-service.beanpod.xml
+
+# Sensors
+vendor/lib64/hw/sensors.mt6768.so
+vendor/lib64/libakm.so;FIX_SONAME
+vendor/lib64/libhwm.so
+vendor/lib64/libsensor_custom.so
+vendor/lib64/sensors.touch.detect.so
