@@ -885,3 +885,18 @@ vendor/lib64/vendor.microtrust.hardware.thh@2.0.so
 # VPU
 vendor/lib64/libmvpu_config_data.so
 vendor/lib64/libmvpu_wrapper.so
+
+# WiFi
+vendor/etc/init/init.wlan_drv.rc
+vendor/etc/vintf/manifest/CommandService.xml
+vendor/lib64/libwapi.so
+vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so;FIX_SONAME
+vendor/lib64/libwifical.so
+vendor/lib64/libwifinvram.so
+vendor/lib64/libwifinvramdata.so
+vendor/lib64/libwpa_client.so
+vendor/lib64/vendor.mediatek.hardware.netdagent-V1-ndk.so
+
+# WiFi (firmware)
+vendor/firmware/WIFI_RAM_CODE_soc1_0_1a_1.bin
+vendor/firmware/wifi.cfg

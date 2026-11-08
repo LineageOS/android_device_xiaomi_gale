@@ -238,3 +238,9 @@ ro.vendor.mtk_svp_on_mtee_support=1
 # USB
 vendor.usb.vid=0x0E8D
 vendor.usb.controller=musb-hdrc
+
+# Wi-Fi
+ro.vendor.wifi.sap.concurrent.iface=ap1
+ro.vendor.wifi.sap.interface=ap0
+ro.vendor.wlan.chrdev=wmt_chrdev_wifi
+ro.vendor.wlan.gen=gen4m_6768
