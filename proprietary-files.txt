@@ -756,6 +756,11 @@ vendor/lib64/libvcodecdrv_v3a.so
 vendor/lib64/libvcodecdrv_header_stub.so
 vendor/lib64/libformatter.so:vendor/lib64/libformatter-mtk.so;FIX_SONAME
 
+# MMS
+vendor/bin/hw/vendor.mediatek.hardware.mms-service
+vendor/etc/init/vendor.mediatek.hardware.mms-service.rc
+vendor/lib64/vendor.mediatek.hardware.mms-V1-ndk.so
+
 # Sensors
 vendor/lib64/hw/sensors.mt6768.so
 vendor/lib64/libakm.so;FIX_SONAME
