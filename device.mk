@@ -182,5 +182,10 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/xiaomi \
     hardware/mediatek
 
+# Vibrator
+$(call soong_config_set_bool,mediatek_vibrator,supports_effects,true)
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator-service.mediatek
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/gale/gale-vendor.mk)
