@@ -29,4 +29,13 @@
         <name>vendor.mediatek.hardware.camera.postproc</name>
         <fqname>IPostDevice/default</fqname>
     </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.composer_ext</name>
+        <fqname>IComposerExt/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.pq_aidl</name>
+        <version>7</version>
+        <fqname>IPictureQuality_AIDL/default</fqname>
+    </hal>
 </manifest>
