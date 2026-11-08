@@ -47,7 +47,8 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     audio_policy.stub \
     audio.r_submix.default \
-    audio.usb.default
+    audio.usb.default \
+    android.hardware.bluetooth.audio-impl-mediatek-hidl
 
 # AIDL effect libraries for audio_effects_config.xml
 PRODUCT_PACKAGES += \
@@ -91,6 +92,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.boot-service.mediatek \
     android.hardware.boot-service.mediatek_recovery
+
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth-service.mediatek
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml
 
 # Health
 PRODUCT_PACKAGES += \
