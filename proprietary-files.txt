@@ -741,6 +741,43 @@ vendor/lib64/libfgauge_gm30.so
 # Fuelgauge - From lamu_g VVTA35.51-137 7eabca release-keys
 vendor/bin/fuelgauged|862119a2c11b364ed31f4e94818378e6753553de
 
+# GNSS
+vendor/bin/hw/android.hardware.gnss-service.mediatek
+vendor/bin/mnld
+vendor/bin/mtk_agpsd
+vendor/etc/init/android.hardware.gnss-service.mediatek.rc
+vendor/etc/init/mtk_agpsd_p.rc
+vendor/etc/vintf/manifest/gnss-default.xml:vendor/etc/vintf/manifest/gnss-aosp.xml
+vendor/etc/vintf/manifest/gnss-mtk.xml
+vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so
+vendor/lib64/hw/gps.default.so
+vendor/lib64/hw/vendor.mediatek.hardware.gnss-impl.so
+vendor/lib64/libDR.so
+vendor/lib64/libapmonitor_vendor.so
+vendor/lib64/libmnl.so:vendor/lib64/libmnl-mtk.so;FIX_SONAME
+vendor/lib64/vendor.mediatek.hardware.gnss-V2-ndk.so
+
+# GNSS (configs)
+vendor/etc/gnss/agps_profiles_conf2.xml
+vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml
+vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml
+vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_CBN.xml
+vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Claro_Peru.xml
+vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_CMCC.xml
+vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_CT.xml
+vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_CU.xml
+vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_DoCoMo.xml
+vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Entel_Peru.xml
+vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_KDDI.xml
+vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Rakuten.xml
+vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_SK_Telecom.xml
+vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_SoftBank.xml
+vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Sprint.xml
+vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_T-Mobile_US.xml
+vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml
+vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml
+vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml
+
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper-service.beanpod
 vendor/etc/init/android.hardware.gatekeeper-service.beanpod.rc

@@ -58,6 +58,9 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libcodec2_mtk_venc.so'
     ): blob_fixup()
         .replace_needed('libformatter.so', 'libformatter-mtk.so'),
+    'vendor/bin/mnld': blob_fixup()
+        .replace_needed('android.hardware.sensors-V2-ndk.so', 'android.hardware.sensors-V3-ndk.so')
+        .replace_needed('libmnl.so', 'libmnl-mtk.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
