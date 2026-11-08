@@ -172,6 +172,9 @@ PRODUCT_COPY_FILES += \
 # Overlays
 $(call inherit-product, hardware/mediatek/overlay/mssi.mk)
 
+PRODUCT_PACKAGES += \
+    FrameworkOverlayGale
+
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Partitions
