@@ -889,6 +889,26 @@ vendor/etc/vintf/manifest/android.hardware.tetheroffload-V1-service.xml
 vendor/lib64/libforkexecwrap.so
 vendor/lib64/libifcutils_mtk.so
 
+# Thermal
+vendor/bin/mi_thermald
+vendor/etc/thermal-camera.conf
+vendor/etc/thermal-chg-only.conf
+vendor/etc/thermal-class0.conf
+vendor/etc/thermal-hp-mgame.conf
+vendor/etc/thermal-hp-normal.conf
+vendor/etc/thermal-huanji.conf
+vendor/etc/thermal-map.conf
+vendor/etc/thermal-mgame.conf
+vendor/etc/thermal-navigation.conf
+vendor/etc/thermal-nolimits.conf
+vendor/etc/thermal-normal.conf
+vendor/etc/thermal-phone.conf
+vendor/etc/thermal-tgame.conf
+vendor/etc/thermal-video.conf
+vendor/etc/thermal-videochat.conf
+vendor/etc/thermalbreakboostconfig.xml
+vendor/etc/thermald-devices.conf
+
 # VPU
 vendor/lib64/libmvpu_config_data.so
 vendor/lib64/libmvpu_wrapper.so

@@ -1,0 +1,82 @@
+{
+  "Sensors": [
+    {
+      "Name": "CPU",
+      "Type": "CPU",
+      "ZoneName": "mtktscpu",
+      "HotThreshold": ["NAN", "NAN", "NAN", 85, 90, 100, 117],
+      "VrThreshold": "85.0",
+      "Multiplier": 0.001,
+      "Monitor": false
+    },
+    {
+      "Name": "GPU",
+      "Type": "GPU",
+      "ZoneName": "mtktscpu",
+      "HotThreshold": ["NAN", "NAN", "NAN", 85, 90, 100, 117],
+      "VrThreshold": "85.0",
+      "Multiplier": 0.001,
+      "Monitor": false
+    },
+    {
+      "Name": "BATTERY",
+      "Type": "BATTERY",
+      "HotThreshold": ["NAN", "NAN", "NAN", 50, 55, 59, 60],
+      "VrThreshold": "50.0",
+      "Multiplier": 0.001,
+      "Monitor": false,
+      "ZoneName": "mtktsbattery"
+    },
+    {
+      "Name": "SKIN",
+      "Type": "SKIN",
+      "HotThreshold": ["NAN", 43, 45, 50, 70, 80, 90],
+      "VrThreshold": "50.0",
+      "Multiplier": 0.001,
+      "Monitor": false,
+      "ZoneName": "mtktsAP"
+    },
+    {
+      "Name": "POWER_AMPLIFIER",
+      "Type": "POWER_AMPLIFIER",
+      "HotThreshold": ["NAN", "NAN", "NAN", 68, 90, 100, 110],
+      "VrThreshold": "NAN",
+      "Multiplier": 0.001,
+      "Monitor": false,
+      "ZoneName": "mtktsbtsmdpa"
+    },
+    {
+      "Name": "NPU",
+      "Type": "NPU",
+      "ZoneName": "mtktscpu",
+      "HotThreshold": ["NAN", "NAN", "NAN", 85, 90, 100, 117],
+      "VrThreshold": "NAN",
+      "Multiplier": 0.001,
+      "Monitor": false
+    },
+    {
+      "Name": "TPU",
+      "Type": "TPU",
+      "ZoneName": "mtktscpu",
+      "HotThreshold": ["NAN", "NAN", "NAN", 85, 90, 100, 117],
+      "VrThreshold": "NAN",
+      "Multiplier": 0.001,
+      "Monitor": false
+    },
+    {
+      "Name": "SOC",
+      "Type": "SOC",
+      "ZoneName": "mtktscpu",
+      "HotThreshold": ["NAN", "NAN", "NAN", 85, 90, 100, 117],
+      "VrThreshold": "NAN",
+      "Multiplier": 0.001,
+      "Monitor": false
+    }
+  ],
+  "CoolingDevices": [
+    {
+      "Name": "charger-cooler",
+      "Type": "COMPONENT"
+    }
+  ]
+}

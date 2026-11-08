@@ -146,6 +146,7 @@ PRODUCT_PACKAGES += \
     init.connectivity.rc \
     init.recovery.mt6768.rc \
     init.mt6768.rc \
+    init.mt6768.thermal.rc \
     init.mt6768.usb.rc \
     init.mtkgki.rc \
     init.modem.rc \
@@ -194,6 +195,13 @@ PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
     hardware/xiaomi \
     hardware/mediatek
+
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal-service.mediatek
+
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
 
 # USB
 PRODUCT_PACKAGES += \
