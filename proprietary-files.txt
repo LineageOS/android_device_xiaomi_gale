@@ -737,6 +737,25 @@ vendor/bin/hw/android.hardware.gatekeeper-service.beanpod
 vendor/etc/init/android.hardware.gatekeeper-service.beanpod.rc
 vendor/etc/vintf/manifest/android.hardware.gatekeeper-service.beanpod.xml
 
+# Media
+vendor/bin/hw/android.hardware.media.c2-mediatek-64b:vendor/bin/hw/android.hardware.media.c2-mediatek
+vendor/etc/init/android.hardware.media.c2-mediatek.rc
+vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy
+vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy
+vendor/etc/vintf/manifest/manifest_media_c2_default.xml
+vendor/lib64/AVCSecureVdecCA.so
+vendor/lib64/VP9SecureVdecCA.so
+vendor/lib64/libcodec2_mtk_c2store.so
+vendor/lib64/libcodec2_mtk_vdec.so
+vendor/lib64/libcodec2_mtk_venc.so
+vendor/lib64/libcodec2_vpp_qt_plugin.so
+vendor/lib64/libcodec2_vpp_rs_plugin.so
+vendor/lib64/libvcodec_oal.so;DISABLE_CHECKELF
+vendor/lib64/libvcodec_utility_v3a.so
+vendor/lib64/libvcodecdrv_v3a.so
+vendor/lib64/libvcodecdrv_header_stub.so
+vendor/lib64/libformatter.so:vendor/lib64/libformatter-mtk.so;FIX_SONAME
+
 # Sensors
 vendor/lib64/hw/sensors.mt6768.so
 vendor/lib64/libakm.so;FIX_SONAME

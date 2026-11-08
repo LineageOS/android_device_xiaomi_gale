@@ -144,6 +144,15 @@ ro.netflix.bsp_rev=MTK6768-19055-1
 # Gatekeeper
 ro.hardware.gatekeeper=beanpod
 
+# Media
+debug.stagefright.c2inputsurface=-1
+media.c2.dmabuf.padding=3072
+media.c2.hal.selection=aidl
+ro.vendor.jpeg_decode_sw_opt=1
+ro.vendor.mtk_sec_video_path_support=1
+vendor.mtk.vdec.decode.error.handle.mode=3
+vendor.mtk.vdec.waitkeyframeforplay=11
+
 # Picture Quality
 ro.vendor.mtk.pq.aidl=true
 persist.vendor.sys.pq.mtk_disp_clarity_support=0
