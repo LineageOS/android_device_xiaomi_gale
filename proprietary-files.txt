@@ -621,3 +621,9 @@ vendor/etc/camera/xiaomi/superlowlightsnapshot.json
 vendor/etc/camera/xiaomi/thirdpartysnapshot.json
 vendor/etc/camera/xiaomi/uwsuperlowlightshot.json
 vendor/odm/etc/camera/camerabooster.json:vendor/etc/camera/camerabooster.json
+
+# DRM (Widevine)
+vendor/apex/com.google.android.widevine.nonupdatable.apex
+vendor/lib64/mediadrm/libdrmclearkeyplugin.so
+vendor/lib64/mediadrm/libmockdrmcryptoplugin.so
+vendor/lib64/liboemcrypto.so

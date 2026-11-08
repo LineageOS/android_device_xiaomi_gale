@@ -51,3 +51,8 @@ ro.vendor.mtk_cam_security_support=1
 ro.vendor.mtk_camera_app_version=3
 vendor.camera.mdp.cz.enable=1
 vendor.camera.mdp.dre.enable=0
+
+# DRM
+drm.service.enabled=true
+ro.vendor.mtk_widevine_drm_l1_support=1
+ro.netflix.bsp_rev=MTK6768-19055-1
