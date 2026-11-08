@@ -142,6 +142,7 @@ PRODUCT_PACKAGES += \
     init.connectivity.rc \
     init.recovery.mt6768.rc \
     init.mt6768.rc \
+    init.mt6768.usb.rc \
     init.mtkgki.rc \
     init.modem.rc \
     init.project.rc \
@@ -181,6 +182,15 @@ PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
     hardware/xiaomi \
     hardware/mediatek
+
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb-service.mediatek \
+    android.hardware.usb.gadget-service.mediatek
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.usb.accessory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.accessory.xml \
+    frameworks/native/data/etc/android.hardware.usb.host.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.host.xml
 
 # Vibrator
 $(call soong_config_set_bool,mediatek_vibrator,supports_effects,true)
