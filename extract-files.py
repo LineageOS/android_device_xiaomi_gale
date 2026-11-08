@@ -29,7 +29,20 @@ namespace_imports = [
 def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
     return f'{lib}_{partition}' if partition == 'vendor' else None
 
+lib_fixups: lib_fixups_user_type = {
+    **lib_fixups,
+    (
+        'vendor.mediatek.hardware.videotelephony-V1-ndk.so',
+    ): lib_fixup_vendor_suffix,
+}
+
 blob_fixups: blob_fixups_user_type = {
+    'system_ext/priv-app/ImsService/ImsService.apk': blob_fixup()
+        .apktool_patch('blob-patches/ImsService.patch'),
+    'system_ext/lib64/libimsma.so': blob_fixup()
+        .replace_needed('libsink.so', 'libsink-mtk.so'),
+    ('system_ext/etc/init/init.vtservice.rc', 'vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc'): blob_fixup()
+        .regex_replace('start', 'enable'),
     ('vendor/lib64/libaalservice.so', 'vendor/lib64/libcam.utils.sensorprovider.so'): blob_fixup()
         .replace_needed('android.hardware.sensors-V2-ndk.so', 'android.hardware.sensors-V3-ndk.so'),
     'vendor/bin/hw/android.hardware.audio.service-aidl.mediatek': blob_fixup()

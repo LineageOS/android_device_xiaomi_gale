@@ -145,6 +145,13 @@ PRODUCT_PACKAGES += \
     android.hardware.health-service.mediatek \
     android.hardware.health-service.mediatek-recovery
 
+# IMS
+$(call inherit-product, hardware/lineage/compat/frameworks/compat.mk)
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.mediatek.ims.xml \
+    $(DEVICE_PATH)/configs/permissions/privapp-permissions-com.mediatek.telephony.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.mediatek.telephony.xml \
+    $(DEVICE_PATH)/configs/permissions/com.mediatek.ims.config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/com.mediatek.ims.config.xml
+
 # Init
 PRODUCT_PACKAGES += \
     fstab.mt6768 \
@@ -185,6 +192,9 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
+# Platform
+TARGET_BOARD_PLATFORM := mt6768
 
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
