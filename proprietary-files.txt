@@ -835,6 +835,12 @@ vendor/bin/hw/vendor.mediatek.hardware.mms-service
 vendor/etc/init/vendor.mediatek.hardware.mms-service.rc
 vendor/lib64/vendor.mediatek.hardware.mms-V1-ndk.so
 
+# MMAgent
+vendor/bin/hw/vendor.mediatek.hardware.mmagent-service
+vendor/etc/init/vendor.mediatek.hardware.mmagent-service.rc
+vendor/lib64/mt6768/libmmagent.so;SYMLINK=vendor/lib64/libmmagent.so
+vendor/lib64/vendor.mediatek.hardware.mmagent-V1-ndk.so
+
 # NVRAM
 vendor/bin/hw/vendor.mediatek.hardware.nvram-service
 vendor/bin/nvram_daemon
