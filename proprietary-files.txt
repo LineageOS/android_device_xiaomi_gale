@@ -794,6 +794,11 @@ vendor/etc/init/android.hardware.keymaster@4.1-service.beanpod.rc
 vendor/etc/init/microtrust.bp_kmsetkey_ca.rc
 vendor/lib64/hw/kmsetkey.beanpod.so
 
+# Media - From lamu_g VVTA35.51-137 7eabca release-keys
+vendor/bin/v3avpud-64b|74d44c29eec6412b13f0736bff0998d56d63ef6d
+vendor/etc/init/v3avpud-64b.rc|725a9be947d9def93b4f83ddae06503b16e9714c
+vendor/lib64/libvpudv3a_vcodec.so|ee3c5996df91abfec37a24a775eed36d51708b8a
+
 # Media
 vendor/bin/hw/android.hardware.media.c2-mediatek-64b:vendor/bin/hw/android.hardware.media.c2-mediatek
 vendor/etc/init/android.hardware.media.c2-mediatek.rc
@@ -811,6 +816,7 @@ vendor/lib64/libvcodec_oal.so;DISABLE_CHECKELF
 vendor/lib64/libvcodec_utility_v3a.so
 vendor/lib64/libvcodecdrv_v3a.so
 vendor/lib64/libvcodecdrv_header_stub.so
+vendor/lib64/mt6768/libmtk_drvb.so;SYMLINK=vendor/lib64/libmtk_drvb.so
 vendor/lib64/libformatter.so:vendor/lib64/libformatter-mtk.so;FIX_SONAME
 
 # MMS
