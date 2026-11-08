@@ -737,6 +737,13 @@ vendor/bin/hw/android.hardware.gatekeeper-service.beanpod
 vendor/etc/init/android.hardware.gatekeeper-service.beanpod.rc
 vendor/etc/vintf/manifest/android.hardware.gatekeeper-service.beanpod.xml
 
+# Keymaster
+vendor/bin/hw/android.hardware.keymaster@4.1-service.beanpod
+vendor/bin/bp_kmsetkey_ca
+vendor/etc/init/android.hardware.keymaster@4.1-service.beanpod.rc
+vendor/etc/init/microtrust.bp_kmsetkey_ca.rc
+vendor/lib64/hw/kmsetkey.beanpod.so
+
 # Media
 vendor/bin/hw/android.hardware.media.c2-mediatek-64b:vendor/bin/hw/android.hardware.media.c2-mediatek
 vendor/etc/init/android.hardware.media.c2-mediatek.rc

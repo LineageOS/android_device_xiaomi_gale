@@ -149,6 +149,10 @@ PRODUCT_PACKAGES += \
     init.sensor_1_0.rc \
     ueventd.mt6768.rc
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.hardware_keystore.km41.xml
+
 # Linker config
 PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
     $(DEVICE_PATH)/configs/linker.config.json

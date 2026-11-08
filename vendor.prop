@@ -144,6 +144,10 @@ ro.netflix.bsp_rev=MTK6768-19055-1
 # Gatekeeper
 ro.hardware.gatekeeper=beanpod
 
+# Keymaster
+ro.hardware.wechat=beanpod
+ro.hardware.kmsetkey=beanpod
+
 # Media
 debug.stagefright.c2inputsurface=-1
 media.c2.dmabuf.padding=3072

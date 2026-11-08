@@ -4,6 +4,11 @@
         <version>3</version>
         <fqname>ICameraProvider/internal/0</fqname>
     </hal>
+    <hal format="hidl">
+        <name>android.hardware.keymaster</name>
+        <transport>hwbinder</transport>
+        <fqname>@4.1::IKeymasterDevice/default</fqname>
+    </hal>
     <hal format="aidl">
         <name>android.hardware.soundtrigger3</name>
         <version>2</version>
