@@ -679,6 +679,7 @@ vendor/bin/hw/android.hardware.graphics.composer@3.3-service
 vendor/bin/hw/android.hardware.graphics.allocator-V2-service-mediatek
 vendor/lib64/hw/mapper.mediatek.so
 vendor/bin/hw/vendor.mediatek.hardware.gpuserv-service
+vendor/etc/displayconfig/display_id_4627039422300187648.xml
 vendor/etc/gralloc/cam.xml
 vendor/etc/gralloc/dpu.xml
 vendor/etc/gralloc/dpu_aeu.xml
@@ -774,6 +775,18 @@ vendor/apex/com.google.android.widevine.nonupdatable.apex
 vendor/lib64/mediadrm/libdrmclearkeyplugin.so
 vendor/lib64/mediadrm/libmockdrmcryptoplugin.so
 vendor/lib64/liboemcrypto.so
+
+# Fingerprint
+vendor/bin/hw/vendor.silead.hardware.fingerprintext@1.0-service
+vendor/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc
+vendor/lib64/hw/fingerprint.fpc.default.so
+vendor/lib64/hw/fingerprint.goodix.default.so
+vendor/lib64/hw/fingerprint.silead.default.so
+vendor/lib64/libgf_ca.so
+vendor/lib64/libgf_hal.so
+vendor/lib64/libgoodixhwfingerprint.so
+vendor/lib64/libsl_fp_impl.so
+vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so
 
 # Fuelgauge
 vendor/bin/fuelgauged_nvram
