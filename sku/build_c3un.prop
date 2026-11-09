@@ -1,0 +1,10 @@
+ro.odm.build.fingerprint=Redmi/gust_global/gust:15/AP3A.240905.015.A2/OS2.0.209.0.VGPMIXM:user/release-keys
+bluetooth.device.default_name=Redmi 13C     
+vendor.usb.product_string=Redmi 13C
+ro.product.odm.brand=Redmi
+ro.product.odm.device=gust
+ro.product.odm.model=23108RN04Y
+ro.product.odm.name=gust_global
+ro.product.odm.marketname=Redmi 13C
+ro.product.odm.cert=23108RN04Y
+
