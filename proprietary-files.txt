@@ -657,6 +657,7 @@ vendor/etc/camera/xiaomi/uwsuperlowlightshot.json
 odm/etc/camera/camerabooster.json:vendor/etc/camera/camerabooster.json
 
 # Connectivity
+vendor/bin/stp_dump3
 vendor/bin/wmt_launcher
 vendor/bin/wmt_loader
 vendor/etc/init/init.connfem.rc
@@ -666,7 +667,6 @@ vendor/firmware/WMT_SOC.cfg
 vendor/firmware/soc1_0_patch_mcu_1a_1_hdr.bin
 vendor/firmware/soc1_0_ram_mcu_1a_1_hdr.bin
 vendor/firmware/soc1_0_ram_wifi_1a_1_hdr.bin
-vendor/firmware/soc1_0_ram_mcu_1a_1_hdr.bin
 vendor/lib64/libconnfem.so
 
 # Display
