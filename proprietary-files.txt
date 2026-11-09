@@ -45,6 +45,9 @@ vendor/lib64/libaurisysdemo.so
 vendor/lib64/libbessound_hd_mtk_vendor.so
 vendor/lib64/libblisrc32_vendor.so
 vendor/lib64/libcvsd_mtk.so
+vendor/lib64/libsdrparser.so
+vendor/lib64/libmisight.so
+vendor/lib64/libmisound.so
 vendor/lib64/libmsbc_mtk.so
 vendor/lib64/libmtklimiter_vendor.so
 vendor/lib64/libmtkshifter_vendor.so
@@ -245,6 +248,8 @@ vendor/lib64/libanc_single_bokeh_rear.so
 vendor/lib64/libanc_single_bokeh.so
 vendor/lib64/libbwc.so
 vendor/lib64/libc++_shared.so
+vendor/lib64/libchromanr.so
+vendor/lib64/lib3a.n3d3a.so
 vendor/lib64/libcam.chdr.so
 vendor/lib64/libcam.feature_utils.so
 vendor/lib64/libcam.hal3a.cctsvr.so
@@ -278,6 +283,10 @@ vendor/lib64/libcamalgo.platform.so
 vendor/lib64/libcamalgo.platform2.so
 vendor/lib64/libcamalgo.utility.so
 vendor/lib64/libcamalgo.warp.so
+vendor/lib64/libcamalgo.vsf.so
+vendor/lib64/libcamalgo.n3d.so
+vendor/lib64/libmtkcam_dpe.so
+vendor/lib64/libfeature.vsdof.hal.so
 vendor/lib64/libcamdrv_isp.so
 vendor/lib64/libcamdrv_tuning_mgr.so
 vendor/lib64/libcamdrv_twin.so
@@ -316,8 +325,14 @@ vendor/lib64/libmorpho_ImageRefinerLite.so
 vendor/lib64/libmorpho_ImageRefiner.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libmsnr.so
+vendor/lib64/libmtkcam_hal_aidl_common.so
+vendor/lib64/libmtkcam_hal_aidl_device.so
+vendor/lib64/libmtkcam_hal_aidl_provider.so
+vendor/lib64/libmtkcam_hal_aidl_utils.so
 vendor/lib64/libmtkcam.atmseventmgr.so
+vendor/lib64/libmtkcam.debugwrapper.so
 vendor/lib64/libmtkcam.eventcallback.so
+vendor/lib64/libmtkcam.featurepipe.depthmap.so
 vendor/lib64/libmtkcam.featurepipe.capture.so
 vendor/lib64/libmtkcam.featurepipe.streaming.so
 vendor/lib64/libmtkcam.featurepipe.vsdof_util.so
@@ -394,6 +409,10 @@ vendor/lib64/ov8856_truly_front_ii_mipi_raw_IdxMgr.so
 vendor/lib64/ov8856_truly_front_ii_mipi_raw_tuning.so
 vendor/lib64/ov8856_truly_front_ii_mipi_raw_xts_IdxMgr.so
 vendor/lib64/ov8856_truly_front_ii_mipi_raw_xts_tuning.so
+vendor/lib64/s5k4h7sub_mipi_raw_IdxMgr.so
+vendor/lib64/s5k4h7sub_mipi_raw_tuning.so
+vendor/lib64/s5k4h7_mipi_raw_IdxMgr.so
+vendor/lib64/s5k4h7_mipi_raw_tuning.so
 vendor/lib64/s5kjns_sunny_main_ii_mipi_raw_IdxMgr.so
 vendor/lib64/s5kjns_sunny_main_ii_mipi_raw_tuning.so
 vendor/lib64/s5kjns_sunny_main_ii_mipi_raw_xts_IdxMgr.so
@@ -411,6 +430,7 @@ vendor/lib64/sc202cs_sunny_marco_i_mipi_raw_tuning.so
 vendor/lib64/sc202cs_sunny_marco_i_mipi_raw_xts_IdxMgr.so
 vendor/lib64/sc202cs_sunny_marco_i_mipi_raw_xts_tuning.so
 vendor/lib64/libQstAlgo.so
+vendor/lib64/libudf.so
 vendor/lib64/vendor.mediatek.hardware.camera.atms-V1-ndk.so
 vendor/lib64/vendor.mediatek.hardware.camera.bgservice-V1-ndk.so
 vendor/lib64/vendor.mediatek.hardware.camera.frhandler@1.0.so
@@ -717,6 +737,7 @@ vendor/lib64/vendor.mediatek.hardware.pq_aidl-V4-ndk.so
 vendor/lib64/vendor.mediatek.hardware.pq_aidl-V7-ndk.so
 vendor/lib64/vendor.mediatek.hardware.composer_ext-V1-ndk.so
 vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.0.so
 
 # Display (configs)
 vendor/etc/dsi_panel_c3uv_35_03_0b_vdo_mi.xml
@@ -765,6 +786,9 @@ vendor/lib64/libDR.so
 vendor/lib64/libapmonitor_vendor.so
 vendor/lib64/libmnl.so:vendor/lib64/libmnl-mtk.so;FIX_SONAME
 vendor/lib64/vendor.mediatek.hardware.gnss-V2-ndk.so
+vendor/lib64/libmtkcam.debugwrapper.so
+vendor/lib64/vendor.mediatek.hardware.apmonitor-V1-ndk.so
+vendor/lib64/vendor.mediatek.hardware.apmonitor@2.0.so
 
 # GNSS (configs)
 vendor/etc/gnss/agps_profiles_conf2.xml
@@ -854,6 +878,8 @@ vendor/lib64/VP9SecureVdecCA.so
 vendor/lib64/libcodec2_mtk_c2store.so
 vendor/lib64/libcodec2_mtk_vdec.so
 vendor/lib64/libcodec2_mtk_venc.so
+vendor/lib64/libcodec2_vpp_fa_plugin.so
+vendor/lib64/libcodec2_vpp_mi_plugin.so
 vendor/lib64/libcodec2_vpp_qt_plugin.so
 vendor/lib64/libcodec2_vpp_rs_plugin.so
 vendor/lib64/libvcodec_oal.so;DISABLE_CHECKELF
@@ -939,6 +965,7 @@ vendor/lib64/libviamipc-ril.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex.assist-V2-ndk.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex.atci-V1-ndk.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex.cap-V1-ndk.so
+vendor/lib64/vendor.mediatek.hardware.clientapi-V1-ndk.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex.data-V3-ndk.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex.dch-V2-ndk.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex.em-V1-ndk.so
