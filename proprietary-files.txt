@@ -652,7 +652,10 @@ vendor/etc/camera/xiaomi/uwsuperlowlightshot.json
 odm/etc/camera/camerabooster.json:vendor/etc/camera/camerabooster.json
 
 # Connectivity
+vendor/bin/wmt_launcher
+vendor/bin/wmt_loader
 vendor/etc/init/init.connfem.rc
+vendor/etc/init/init.wmt_drv.rc
 vendor/firmware/connfem.cfg
 vendor/firmware/WMT_SOC.cfg
 vendor/firmware/soc1_0_patch_mcu_1a_1_hdr.bin
