@@ -159,6 +159,7 @@ ro.hardware.gatekeeper=beanpod
 
 # IMS
 persist.vendor.anr.enhancement=0
+persist.vendor.ims_support=1
 persist.vendor.mtk.volte.enable=1
 persist.vendor.mtk_ct_volte_support=3
 persist.vendor.mtk_dynamic_ims_switch=1
