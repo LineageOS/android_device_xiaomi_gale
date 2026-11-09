@@ -18,6 +18,19 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.nfc.mt6768.rc",
+    src: "init.nfc.mt6768.rc",
+    relative_install_path: "init/hw",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.nfc-select.sh",
+    src: "init.nfc-select.sh",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.mt6768.power.rc",
     src: "init.mt6768.power.rc",
     relative_install_path: "init/hw",

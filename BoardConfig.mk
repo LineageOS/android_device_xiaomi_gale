@@ -135,6 +135,14 @@ BOOT_SECURITY_PATCH := $(VENDOR_SECURITY_PATCH)
 # SELinux
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 
+# SKU
+ODM_MANIFEST_SKUS += \
+    c3un \
+    c3upg
+
+ODM_MANIFEST_C3UN_FILES := $(DEVICE_PATH)/manifest_nfc.xml
+ODM_MANIFEST_C3UPG_FILES := $(DEVICE_PATH)/manifest_nfc.xml
+
 # VINTF
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
