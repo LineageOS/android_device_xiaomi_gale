@@ -629,7 +629,7 @@ vendor/etc/camera/xiaomi/superhdsnapshot.json
 vendor/etc/camera/xiaomi/superlowlightsnapshot.json
 vendor/etc/camera/xiaomi/thirdpartysnapshot.json
 vendor/etc/camera/xiaomi/uwsuperlowlightshot.json
-vendor/odm/etc/camera/camerabooster.json:vendor/etc/camera/camerabooster.json
+odm/etc/camera/camerabooster.json:vendor/etc/camera/camerabooster.json
 
 # Connectivity
 vendor/etc/init/init.connfem.rc
