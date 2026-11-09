@@ -42,6 +42,7 @@ vendor/lib64/libaudiopolicyconfigxml_mtk_vendor.so
 vendor/lib64/libaudioprimarydevicehalifclient.so
 vendor/lib64/libaudiotoolkit_vendor.so
 vendor/lib64/libaurisysdemo.so
+vendor/lib64/libawinic_mtk_aurisys.so
 vendor/lib64/libbessound_hd_mtk_vendor.so
 vendor/lib64/libblisrc32_vendor.so
 vendor/lib64/libcvsd_mtk.so
@@ -56,6 +57,7 @@ vendor/lib64/libnxp_extamp_intf.so
 vendor/lib64/librt_extamp_intf.so
 vendor/lib64/libspeech_enh_lib.so;FIX_SONAME
 vendor/lib64/libspeechparser_vendor.so
+vendor/lib64/soundfx/libmisoundfx_aidl.so
 
 # Audio (configs)
 vendor/etc/audio_param/AudioParamOptions.xml
@@ -187,6 +189,9 @@ vendor/etc/audio_param/VoWMicSetting_AudioParam.xml
 vendor/etc/audio_param/VoWMicSetting_ParamUnitDesc.xml
 vendor/etc/audio_param/VoWVoiceCommand_AudioParam.xml
 vendor/etc/audio_param/VoWVoiceCommand_ParamUnitDesc.xml
+vendor/etc/misound_res.bin
+vendor/etc/misound_res_headphone.bin
+vendor/etc/misound_res_spk.bin
 vendor/etc/smartpa_param/AW_DSP.bin
 vendor/etc/smartpa_param/AW_SINWAVE_DSP.bin
 
