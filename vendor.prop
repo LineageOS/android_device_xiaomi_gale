@@ -157,7 +157,7 @@ ro.netflix.bsp_rev=MTK6768-19055-1
 # Fingerprint
 persist.vendor.fingerprint.type=side
 persist.vendor.fingerprint.sensor_modules=fpc,goodix,silead
-persist.vendor.fingerprint.sensor_location=681|749|145|local:0,681|749|145|local:4627039422300187648
+persist.vendor.fingerprint.sensor_location=681|749|145|local:0
 
 # FRP
 ro.frp.pst=/dev/block/by-name/frp
