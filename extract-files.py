@@ -107,6 +107,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so', 'vendor.mediatek.hardware.bluetooth.audio-V3-ndk.so'),
     'vendor/lib64/libteei_daemon_vfs.so' : blob_fixup()
         .add_needed('liblog.so'),
+    'vendor/lib64/libutinterface_custom_md.so': blob_fixup()
+        .add_needed('libutinterface_md.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
