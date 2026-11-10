@@ -852,7 +852,7 @@ vendor/etc/vintf/manifest/android.hardware.gatekeeper-service.beanpod.xml
 system_ext/bin/vtservice
 system_ext/etc/init/init.vtservice.rc
 system_ext/framework/mediatek-ims-base.jar:system/framework/mediatek-ims-base.jar;BOOT_JAR
-system_ext/framework/mediatek-ims-extension-plugin.jar:system/framework/mediatek-ims-extension-plugin.jar
+system_ext/framework/mediatek-ims-extension-plugin.jar
 system_ext/framework/mediatek-telephony-base.jar:system/framework/mediatek-telephony-base.jar;BOOT_JAR
 system_ext/lib64/libcomutils.so
 system_ext/lib64/libimsma.so
@@ -1022,7 +1022,6 @@ vendor/lib64/libcarrierconfig.so
 vendor/lib64/libcapctrl.so
 vendor/lib64/libccci_util.so
 vendor/lib64/libcurl_xcap_md.so
-vendor/lib64/libipsec_ims_shr.so
 vendor/lib64/libmipc.so
 vendor/lib64/libmmprofile.so
 vendor/lib64/libmnetlink_v104.so
@@ -1049,7 +1048,6 @@ vendor/lib64/libsimmelock.so
 vendor/lib64/libstorage_otp.so
 vendor/lib64/libsysenv.so
 vendor/lib64/libtrm.so
-vendor/lib64/libverno.so
 vendor/lib64/libutinterface_custom_md.so;DISABLE_DEPS
 vendor/lib64/libutinterface_md.so
 vendor/lib64/libvia-ril.so
@@ -1094,6 +1092,25 @@ vendor/etc/virtual-spn-conf-by-efgid1.xml
 vendor/etc/virtual-spn-conf-by-efpnn.xml
 vendor/etc/virtual-spn-conf-by-efspn.xml
 vendor/etc/virtual-spn-conf-by-imsi.xml
+
+# Radio - lamu_g VVTA35.51-137 7eabca release-keys
+vendor/bin/volte_imcb|5d3324e43b9ea1c56ad7793a611264dea7eba802
+vendor/bin/volte_imsm_93|9fd114b29e974c4d07f50354f76bf63d27aed753
+vendor/bin/volte_md_status|5869d00240b0861fd02e8f122510be5781f524f9
+vendor/bin/volte_rcs_ua|f13d039915a7a9c95f897b0690ad516748a69a87
+vendor/bin/volte_stack|84070e14704abe330ff6573419ee02c02d3e5fc5
+vendor/bin/volte_ua|e96e21ccefef24f053964085a38aa172be41aec5
+vendor/etc/init/init.volte_imcb.rc|2b7e2e2f7aaf3ca710caf0523c93a817d95ef253|92278c5d18922573b3c35c6097508ca569755afd
+vendor/etc/init/init.volte_imsm_93.rc|6f1e96e82ac18fdf0acc6791ab8db3a6519ca605
+vendor/etc/init/init.volte_md_status.rc|46fb4b2a91b6e1b0650762a1a3e21db79f89532f
+vendor/etc/init/init.volte_stack.rc|dec4adc783464582b92fb4a8c3c2fa3756aa06fb
+vendor/etc/init/init.volte_ua.rc|533820aea60429e5b7a541a512053ac835e817d0|ccf477fb87aa41d8399b2482f1c0bccde9215572
+vendor/lib64/libipsec_ims_shr.so|5bcf12f2ca11c0ac135c225de3d59fa0ca7308be
+vendor/lib64/libverno.so|8a8ebd0d59e1a6dbfe5d1fccfe61d5dbfb0e6bba
+vendor/lib64/libvolte_core_shr.so|69cdfd4fe866fb8ab8e8b57a32334c9f42b21b59
+vendor/lib64/libvolte_xdmc_shr.so|853babe59cdd315b2a0be5d4975c246b94c8593c
+vendor/lib64/vendor.mediatek.hardware.rcs-V1-ndk.so|154f44bc8401375eb2754039cbe992179f863ffd
+vendor/lib64/vendor.mediatek.hardware.rcs@2.0.so|791782cf1eb50f0957b0c8025c7bb9e190468649
 
 # Sensors
 vendor/lib64/hw/sensors.mt6768.so
