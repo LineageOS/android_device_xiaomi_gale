@@ -780,7 +780,7 @@ vendor/lib64/liboemcrypto.so
 vendor/bin/hw/vendor.silead.hardware.fingerprintext@1.0-service
 vendor/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc
 vendor/lib64/hw/fingerprint.fpc.default.so
-vendor/lib64/hw/fingerprint.goodix.default.so
+vendor/lib64/hw/fingerprint.goodix.default.so;FIX_SONAME
 vendor/lib64/hw/fingerprint.silead.default.so
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
