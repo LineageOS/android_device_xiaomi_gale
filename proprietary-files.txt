@@ -1082,10 +1082,13 @@ vendor/lib64/libsensor_custom.so
 vendor/lib64/sensors.touch.detect.so
 
 # TEE
+vendor/bin/hw/vendor.microtrust.hardware.thh@2.0-service
 vendor/bin/init_thh
 vendor/bin/teei_daemon
 vendor/etc/init/microtrust.init_thh.rc
 vendor/etc/init/microtrust.rc
+vendor/etc/init/vendor.microtrust.hardware.thh@2.0-service.rc
+vendor/etc/vintf/manifest/manifest_thh.xml
 vendor/thh/ta/020f0000000000000000000000000000.ta
 vendor/thh/ta/06090000000000000000000000000000.ta
 vendor/thh/ta/08010203000000000000000000000000.ta
