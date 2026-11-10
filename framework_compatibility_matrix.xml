@@ -1,0 +1,9 @@
+<compatibility-matrix version="7.0" type="framework">
+    <hal format="aidl">
+        <name>vendor.tms.tmsnfc_aidl</name>
+        <interface>
+            <name>ITmsNfc</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</compatibility-matrix>
