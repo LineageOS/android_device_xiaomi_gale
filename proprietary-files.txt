@@ -902,6 +902,7 @@ vendor/lib64/AVCSecureVdecCA.so
 vendor/lib64/VP9SecureVdecCA.so
 vendor/lib64/libAVCSecureVencCA.so
 vendor/lib64/libHEVCdec_sa.ca7.android.so
+vendor/lib64/libcodec2_fsr.so
 vendor/lib64/libcodec2_mtk_c2store.so
 vendor/lib64/libcodec2_mtk_vdec.so
 vendor/lib64/libcodec2_mtk_venc.so
