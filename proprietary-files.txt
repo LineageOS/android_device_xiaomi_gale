@@ -939,6 +939,13 @@ vendor/etc/init/vendor.mediatek.hardware.mmagent-service.rc
 vendor/lib64/mt6768/libmmagent.so;SYMLINK=vendor/lib64/libmmagent.so
 vendor/lib64/vendor.mediatek.hardware.mmagent-V1-ndk.so
 
+# Mlipay
+vendor/bin/mlipayd@1.1
+vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
+vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml
+vendor/lib64/libmlipay.so
+vendor/lib64/libmlipay@1.1.so
+
 # NFC
 vendor/etc/SEC_THN31_FW_VTP.txt.bin
 vendor/etc/libese-tms.conf
