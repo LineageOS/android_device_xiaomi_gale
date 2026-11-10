@@ -775,6 +775,13 @@ vendor/apex/com.google.android.widevine.nonupdatable.apex
 vendor/lib64/mediadrm/libdrmclearkeyplugin.so
 vendor/lib64/mediadrm/libmockdrmcryptoplugin.so
 vendor/lib64/liboemcrypto.so
+vendor/lib64/libwvkeybox.so
+
+# Fido
+vendor/bin/fidoca
+vendor/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-service.rc
+vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mfidoca.xml
+vendor/lib64/libmfido.so
 
 # Fingerprint
 vendor/bin/hw/vendor.silead.hardware.fingerprintext@1.0-service
@@ -1142,6 +1149,7 @@ vendor/lib64/libteeclientjni@1.1.so
 vendor/lib64/libteei_daemon_vfs.so
 vendor/lib64/libthha.so;DISABLE_CHECKELF
 vendor/lib64/libthhclient.so
+vendor/lib64/wechat.beanpod.so
 vendor/lib64/vendor.microtrust.hardware.thh@2.0.so
 
 # Tether offload
