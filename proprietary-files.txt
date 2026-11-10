@@ -946,6 +946,13 @@ vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml
 vendor/lib64/libmlipay.so
 vendor/lib64/libmlipay@1.1.so
 
+# Mtdservice
+vendor/bin/mtd@1.3
+vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mtdservice.xml
+vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.3-service.rc
+vendor/lib64/libmt.so
+vendor/lib64/libmt@1.3.so
+
 # NFC
 vendor/etc/SEC_THN31_FW_VTP.txt.bin
 vendor/etc/libese-tms.conf
