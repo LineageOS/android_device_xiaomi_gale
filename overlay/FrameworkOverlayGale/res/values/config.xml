@@ -4,6 +4,9 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
+    <!-- mt6358-accdet reports jack state through ALSA input switches. -->
+    <bool name="config_useDevInputEventForAudioJack">true</bool>
+
     <!-- Array of light sensor LUX values to define our levels for auto backlight brightness support.
       The N entries of this array define N  1 zones as follows:
          Zone 0:        0 <= LUX < array[0]
