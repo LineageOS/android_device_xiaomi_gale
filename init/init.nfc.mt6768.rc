@@ -3,11 +3,12 @@ on post-fs-data
     mkdir /data/vendor/nfc/param 0770 nfc nfc
     mkdir /data/vendor/nfc_socket 0770 nfc nfc
     mkdir /data/vendor/secure_element 0770 secure_element secure_element
+    setprop vendor.nfc.data_ready 1
 
-on post-fs-data && property:ro.boot.product.hardware.sku=c3un
+on property:vendor.nfc.data_ready=1 && property:vendor.all.modules.ready=1 && property:ro.boot.product.hardware.sku=c3un
     start vendor.nfc_selector
 
-on post-fs-data && property:ro.boot.product.hardware.sku=c3upg
+on property:vendor.nfc.data_ready=1 && property:vendor.all.modules.ready=1 && property:ro.boot.product.hardware.sku=c3upg
     start vendor.nfc_selector
 
 service vendor.nfc_selector /vendor/bin/sh /vendor/bin/init.nfc-select.sh
@@ -19,7 +20,6 @@ service vendor.nfc_selector /vendor/bin/sh /vendor/bin/init.nfc-select.sh
     oneshot
 
 on property:vendor.nfc.chip=pn557
-    symlink /dev/pn557 /dev/nq-nci
     start vendor.nfc_hal_service
 
 on property:vendor.nfc.chip=sn110x
@@ -32,6 +32,7 @@ service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc-service.nxp
     class hal
     user nfc
     group nfc drmrpc system
+    interface aidl android.hardware.nfc.INfc/default
     disabled
     override
 
@@ -39,5 +40,6 @@ service nfc_hal_service.tms.aidl /vendor/bin/hw/android.hardware.nfc-service-tms
     class hal
     user nfc
     group nfc
+    interface aidl android.hardware.nfc.INfc/default
     seclabel u:r:hal_nfc_default:s0
     disabled
