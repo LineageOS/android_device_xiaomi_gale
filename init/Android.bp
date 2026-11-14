@@ -11,6 +11,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.fingerprint.gale.rc",
+    src: "init.fingerprint.gale.rc",
+    relative_install_path: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.mt6768.rc",
     src: "init.mt6768.rc",
     relative_install_path: "init/hw",

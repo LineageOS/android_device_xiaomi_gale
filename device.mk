@@ -172,6 +172,7 @@ PRODUCT_PACKAGES += \
     fstab.mt6768 \
     fstab.mt6768.vendor_ramdisk \
     init.connectivity.rc \
+    init.fingerprint.gale.rc \
     init.recovery.mt6768.rc \
     init.mt6768.rc \
     init.mt6768.thermal.rc \
