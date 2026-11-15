@@ -8,6 +8,10 @@ genfscon sysfs /devices/platform/1100d000.i2c/i2c-6/6-006a/power_supply/primary_
 # Camera
 genfscon sysfs /devices/virtual/qvga_cam/qvga_depth/cam_name u:object_r:vendor_sysfs_qvga_camera:s0
 
+# Memory
+genfscon proc /sys/vm/min_free_kbytes u:object_r:vendor_proc_vm_tuning:s0
+genfscon proc /sys/vm/compaction_proactiveness u:object_r:vendor_proc_vm_tuning:s0
+
 # Sensors
 genfscon sysfs /devices/virtual/touch/touch_dev/palm_sensor u:object_r:sysfs_sensor:s0
 
