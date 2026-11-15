@@ -1,0 +1,4 @@
+type vendor_sysfs_qvga_camera, fs_type, sysfs_type;
+
+allow mtk_hal_camera sysfs_sensor:dir search;
+allow mtk_hal_camera vendor_sysfs_qvga_camera:file r_file_perms;
