@@ -1,0 +1,17 @@
+type vendor_nfc_select, domain;
+type vendor_nfc_select_script, file_type, vendor_file_type;
+type vendor_sysfs_nfc_chip, fs_type, sysfs_type;
+
+domain_trans(init, vendor_shell_exec, vendor_nfc_select)
+set_prop(vendor_nfc_select, vendor_nfc_chip_prop)
+
+allow vendor_nfc_select vendor_shell_exec:file rx_file_perms;
+allow vendor_nfc_select vendor_toolbox_exec:file rx_file_perms;
+allow vendor_nfc_select toolbox_exec:file rx_file_perms;
+allow vendor_nfc_select vendor_nfc_select_script:file r_file_perms;
+allow vendor_nfc_select vendor_sysfs_nfc_chip:file r_file_perms;
+allow vendor_nfc_select nfc_device:chr_file getattr;
+allow vendor_nfc_select device:dir { add_name write };
+allow vendor_nfc_select device:lnk_file { getattr read };
+allow vendor_nfc_select nfc_device:lnk_file { create getattr read };
+type_transition vendor_nfc_select device:lnk_file nfc_device "nq-nci";

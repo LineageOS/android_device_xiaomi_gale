@@ -15,7 +15,7 @@ service vendor.nfc_selector /vendor/bin/sh /vendor/bin/init.nfc-select.sh
     class core
     user root
     group root
-    seclabel u:r:vendor_init:s0
+    seclabel u:r:vendor_nfc_select:s0
     disabled
     oneshot
 

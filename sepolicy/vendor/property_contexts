@@ -11,6 +11,9 @@ persist.vendor.sys.fp. u:object_r:vendor_fingerprint_prop:s0
 ro.hardware.fp. u:object_r:vendor_fingerprint_prop:s0
 vendor.silead.fp.ext. u:object_r:vendor_silead_fingerprint_prop:s0
 
+# NFC
+vendor.nfc.chip u:object_r:vendor_nfc_chip_prop:s0 exact string
+
 # Payment
 persist.vendor.sys.attestation.status u:object_r:vendor_mlipay_prop:s0
 persist.vendor.sys.pay. u:object_r:vendor_mlipay_prop:s0

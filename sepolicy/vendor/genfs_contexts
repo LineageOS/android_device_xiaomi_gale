@@ -21,6 +21,9 @@ genfscon sysfs /devices/platform/fingerprint u:object_r:vendor_sysfs_fingerprint
 genfscon proc /sys/vm/min_free_kbytes u:object_r:vendor_proc_vm_tuning:s0
 genfscon proc /sys/vm/compaction_proactiveness u:object_r:vendor_proc_vm_tuning:s0
 
+# NFC
+genfscon sysfs /nfc/chip_name u:object_r:vendor_sysfs_nfc_chip:s0
+
 # Sensors
 genfscon sysfs /devices/virtual/touch/touch_dev/palm_sensor u:object_r:sysfs_sensor:s0
 
