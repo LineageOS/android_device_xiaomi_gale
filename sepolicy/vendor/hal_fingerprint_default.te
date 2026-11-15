@@ -15,3 +15,5 @@ allow hal_fingerprint_default vendor_fingerprint_data_file:file create_file_perm
 r_dir_file(hal_fingerprint_default, vendor_sysfs_fingerprint)
 allow hal_fingerprint_default vendor_sysfs_fingerprint:file rw_file_perms;
 allow hal_fingerprint_default vendor_silead_fingerprint_device:chr_file rw_file_perms;
+allow hal_fingerprint_default sysfs_batteryinfo:dir search;
+allow hal_fingerprint_default sysfs_batteryinfo:file r_file_perms;
