@@ -26,4 +26,5 @@ allow hal_mtdservice_default mediadrm_vendor_data_file:dir create_dir_perms;
 allow hal_mtdservice_default mediadrm_vendor_data_file:file create_file_perms;
 
 get_prop(hal_mtdservice_default, vendor_mlipay_prop)
+get_prop(hal_mtdservice_default, vendor_mtk_soc_prop)
 set_prop(hal_mtdservice_default, vendor_mlipay_prop)
