@@ -8,6 +8,9 @@ genfscon sysfs /devices/platform/1100d000.i2c/i2c-6/6-006a/power_supply/primary_
 # Camera
 genfscon sysfs /devices/virtual/qvga_cam/qvga_depth/cam_name u:object_r:vendor_sysfs_qvga_camera:s0
 
+# Display
+genfscon proc /tp_lockdown_info u:object_r:vendor_proc_tp_lockdown:s0
+
 # Fingerprint
 genfscon sysfs /devices/platform/11012000.spi2/spi_master/spi2/spi2.0/clk_enable u:object_r:vendor_sysfs_fingerprint:s0
 genfscon sysfs /devices/platform/11012000.spi2/spi_master/spi2/spi2.0/wakeup_enable u:object_r:vendor_sysfs_fingerprint:s0
