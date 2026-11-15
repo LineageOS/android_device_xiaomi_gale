@@ -4,3 +4,6 @@ genfscon sysfs /devices/platform/1100d000.i2c/i2c-6/6-006a/power_supply/primary_
 
 # Sensors
 genfscon sysfs /devices/virtual/touch/touch_dev/palm_sensor u:object_r:sysfs_sensor:s0
+
+# Touch
+genfscon sysfs /touchpanel/double_tap u:object_r:vendor_sysfs_double_tap:s0
