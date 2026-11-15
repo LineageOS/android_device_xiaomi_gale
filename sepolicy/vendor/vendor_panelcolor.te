@@ -1,0 +1,5 @@
+type vendor_panelcolor, domain;
+type vendor_panelcolor_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(vendor_panelcolor)
+set_prop(vendor_panelcolor, vendor_panel_color_prop)
