@@ -1,0 +1,3 @@
+type vendor_sysfs_audio_pa, fs_type, sysfs_type;
+
+allow hal_audio_default vendor_sysfs_audio_pa:file r_file_perms;
