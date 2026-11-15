@@ -13,3 +13,10 @@ genfscon sysfs /devices/virtual/touch/touch_dev/palm_sensor u:object_r:sysfs_sen
 
 # Touch
 genfscon sysfs /touchpanel/double_tap u:object_r:vendor_sysfs_double_tap:s0
+
+# Wakeup
+genfscon sysfs /devices/platform/1100d000.i2c/i2c-6/6-006a/power_supply/primary_chg/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1100d000.i2c/i2c-6/6-006a/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1100f000.i2c/i2c-3/3-0028/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/charger/power_supply/bms/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/charger/power_supply/usb/wakeup u:object_r:sysfs_wakeup:s0
