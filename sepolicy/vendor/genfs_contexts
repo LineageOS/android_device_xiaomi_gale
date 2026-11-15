@@ -20,6 +20,7 @@ genfscon sysfs /devices/platform/fingerprint u:object_r:vendor_sysfs_fingerprint
 # Memory
 genfscon proc /sys/vm/min_free_kbytes u:object_r:vendor_proc_vm_tuning:s0
 genfscon proc /sys/vm/compaction_proactiveness u:object_r:vendor_proc_vm_tuning:s0
+genfscon proc /sys/vm/lowmem_reserve_ratio u:object_r:vendor_proc_vm_tuning:s0
 
 # NFC
 genfscon sysfs /nfc/chip_name u:object_r:vendor_sysfs_nfc_chip:s0
