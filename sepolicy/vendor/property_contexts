@@ -1,5 +1,6 @@
 # Camera
 persist.vendor.camera.mi.module. u:object_r:vendor_mtk_camera_prop:s0
+persist.vendor.camera.sensor. u:object_r:vendor_mtk_camera_prop:s0
 
 # Display
 vendor.panel.color u:object_r:vendor_panel_color_prop:s0 exact string
