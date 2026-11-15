@@ -27,3 +27,4 @@
 
 # Display
 /vendor/bin/panelcolor_bin u:object_r:vendor_panelcolor_exec:s0
+/dev/miev u:object_r:vendor_miev_device:s0

@@ -1,4 +1,6 @@
 type vendor_proc_vm_tuning, fs_type, proc_type;
+type vendor_miev_device, dev_type;
 
 allow vendor_init vendor_proc_vm_tuning:file w_file_perms;
 allow vendor_init proc_percpu_pagelist_high_fraction:file w_file_perms;
+allow vendor_init vendor_miev_device:chr_file getattr;
