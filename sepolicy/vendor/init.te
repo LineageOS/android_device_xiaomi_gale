@@ -1,0 +1,3 @@
+type vendor_audio_hw_socket, file_type;
+
+allow init vendor_audio_hw_socket:sock_file create_file_perms;
