@@ -1,0 +1,8 @@
+# TMS NFC HAL (thn31): the same process drives NFC and the SPI eSE
+# (/dev/tms_ese, /data/vendor/secure_element), so hal_nfc_default needs
+# access that AOSP only grants to hal_secure_element_default.
+type vendor_nfc_ese_data_file, file_type, data_file_type;
+
+allow hal_nfc_default secure_element_device:chr_file rw_file_perms;
+allow hal_nfc_default vendor_nfc_ese_data_file:dir create_dir_perms;
+allow hal_nfc_default vendor_nfc_ese_data_file:file create_file_perms;

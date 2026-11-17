@@ -39,7 +39,8 @@ service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc-service.nxp
 service nfc_hal_service.tms.aidl /vendor/bin/hw/android.hardware.nfc-service-tms
     class hal
     user nfc
-    group nfc
+    group nfc secure_element drmrpc system
     interface aidl android.hardware.nfc.INfc/default
+    interface aidl vendor.tms.tmsnfc_aidl.ITmsNfc/default
     seclabel u:r:hal_nfc_default:s0
     disabled
