@@ -769,6 +769,16 @@ vendor/firmware/omnivision_hdl_firmware.img
 vendor/firmware/ovt_tcm_cap_limits.csv
 vendor/firmware/remoteproc_scp
 vendor/firmware/Conf_MultipleTest.ini
+vendor/firmware/novatek_ts_hdl_mp.bin:recovery/root/vendor/firmware/novatek_ts_hdl_mp.bin
+vendor/firmware/novatek_ts_hdl_fw.bin:recovery/root/vendor/firmware/novatek_ts_hdl_fw.bin
+vendor/firmware/focaltech_ts_fw_boe.bin:recovery/root/vendor/firmware/focaltech_ts_fw_boe.bin
+vendor/firmware/chipone_firmware.bin:recovery/root/vendor/firmware/chipone_firmware.bin
+vendor/firmware/gt1151_default_firmware2.img:recovery/root/vendor/firmware/gt1151_default_firmware2.img
+vendor/firmware/omnivision_hdl_firmware.img:recovery/root/vendor/firmware/omnivision_hdl_firmware.img
+vendor/firmware/ovt_tcm_cap_limits.csv:recovery/root/vendor/firmware/ovt_tcm_cap_limits.csv
+vendor/firmware/remoteproc_scp:recovery/root/vendor/firmware/remoteproc_scp
+vendor/firmware/Conf_MultipleTest.ini:recovery/root/vendor/firmware/Conf_MultipleTest.ini
+
 
 # DRM (Widevine)
 vendor/apex/com.google.android.widevine.nonupdatable.apex
