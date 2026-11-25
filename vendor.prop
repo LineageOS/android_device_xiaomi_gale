@@ -319,7 +319,6 @@ ro.vendor.mtk_tee_gp_support=1
 ro.vendor.mtk_svp_on_mtee_support=1
 
 # USB
-vendor.usb.vid=0x0E8D
 vendor.usb.controller=musb-hdrc
 
 # Wi-Fi
