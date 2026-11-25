@@ -99,10 +99,3 @@ prebuilt_etc {
     src: "ueventd.mt6768.rc",
     vendor: true,
 }
-
-prebuilt_etc {
-    name: "init.zram.rc",
-    src: "init.zram.rc",
-    relative_install_path: "init/hw",
-    vendor: true,
-}

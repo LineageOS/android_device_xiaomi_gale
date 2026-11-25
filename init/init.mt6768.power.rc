@@ -100,3 +100,8 @@ on property:sys.boot_completed=1
 
     # Adjust watermark level
     write /proc/sys/vm/watermark_scale_factor 200
+
+    # VM swap tuning
+    write /proc/sys/vm/page-cluster 0
+    write /proc/sys/vm/swappiness 50
+    write /sys/kernel/mm/swap/vma_ra_enabled true

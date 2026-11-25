@@ -189,11 +189,7 @@ PRODUCT_PACKAGES += \
     init.modem.rc \
     init.project.rc \
     init.sensor_1_0.rc \
-    init.zram.rc \
     ueventd.mt6768.rc
-
-PRODUCT_COPY_FILES += \
-    hardware/google/pixel/mm/fstab.zram.40p:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.zram
 
 # Keymaster
 PRODUCT_PACKAGES += \
