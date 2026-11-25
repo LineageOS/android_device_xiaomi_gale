@@ -255,7 +255,7 @@ TARGET_BOARD_PLATFORM := mt6768
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.pixel-libperfmgr \
+    android.hardware.power-service.lineage-libperfmgr \
     vendor.mediatek.hardware.mtkpower@1.2-service.stub \
     vendor.mediatek.hardware.mtkpower-service.stub
 
@@ -318,9 +318,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/mediatek/libmtkperf_client \
     hardware/mediatek/libion_mtk \
     hardware/mediatek \
-    hardware/google/pixel/pixelstats \
-    hardware/google/pixel/power-libperfmgr \
-    hardware/google/interfaces
+    hardware/lineage/interfaces/power-libperfmgr
 
 # Thermal
 PRODUCT_PACKAGES += \
