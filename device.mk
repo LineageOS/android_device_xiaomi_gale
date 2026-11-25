@@ -54,8 +54,7 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     audio_policy.stub \
     audio.r_submix.default \
-    audio.usb.default \
-    android.hardware.bluetooth.audio-impl-mediatek-hidl
+    audio.usb.default
 
 # AIDL effect libraries for audio_effects_config.xml
 PRODUCT_PACKAGES += \
