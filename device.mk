@@ -317,6 +317,9 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/mediatek/libmtkperf_client \
     hardware/mediatek/libion_mtk \
     hardware/mediatek \
+    hardware/google/interfaces \
+    hardware/google/pixel/pixelstats \
+    hardware/google/pixel/power-libperfmgr \
     hardware/lineage/interfaces/power-libperfmgr
 
 # Thermal
