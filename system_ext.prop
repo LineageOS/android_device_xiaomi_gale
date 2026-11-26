@@ -1,2 +1,7 @@
 # Bluetooth
 persist.bluetooth.a2dp_offload.coex_buf_count=5
+
+# Wi-Fi
+wifi.direct.interface=p2p0
+wifi.interface=wlan0
+wifi.tethering.interface=ap0

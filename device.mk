@@ -316,6 +316,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/xiaomi \
     hardware/mediatek/libmtkperf_client \
     hardware/mediatek/libion_mtk \
+    hardware/mediatek/wlan/wifi_hal \
     hardware/mediatek \
     hardware/google/interfaces \
     hardware/google/pixel/pixelstats \
@@ -344,13 +345,14 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.mediatek
 
 # WiFi
-$(call soong_config_set_bool,mediatek_wifi_hal,use_pre_baklava_qpr0_struct,true)
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     hostapd \
     wpa_supplicant \
-    libwifi-hal-wrapper \
     wlan_assistant
+
+PRODUCT_PACKAGES += \
+    wpa_supplicant.conf
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi) \
